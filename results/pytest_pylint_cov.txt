@@ -1,0 +1,45 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.0.0, pluggy-1.4.0 -- /home/samuel/Fall2024_IS601/Homework5/Homework5/bin/python
+cachedir: .pytest_cache
+rootdir: /home/samuel/Fall2024_IS601/Homework5
+configfile: pytest.ini
+testpaths: tests
+plugins: cov-4.1.0, Faker-23.1.0, pylint-0.21.0
+collecting ... collected 12 items
+--------------------------------------------------------------------------------
+Linting files
+.....
+--------------------------------------------------------------------------------
+
+tests/__init__.py::PYLINT SKIPPED (file(s) previously passed pylint ...) [  8%]
+tests/conftest.py::PYLINT SKIPPED (file(s) previously passed pylint ...) [ 16%]
+tests/test_app.py::PYLINT SKIPPED (file(s) previously passed pylint ...) [ 25%]
+tests/test_app.py::test_app_start_exit_command PASSED                    [ 33%]
+tests/test_app.py::test_app_start_unknown_command PASSED                 [ 41%]
+tests/test_commands.py::PYLINT SKIPPED (file(s) previously passed py...) [ 50%]
+tests/test_commands.py::test_add_command PASSED                          [ 58%]
+tests/test_commands.py::test_subtract_command PASSED                     [ 66%]
+tests/test_commands.py::test_multiply_command PASSED                     [ 75%]
+tests/test_commands.py::test_divide_command PASSED                       [ 83%]
+tests/test_commands.py::test_dividebyzero_command PASSED                 [ 91%]
+tests/test_commands.py::test_app_menu_command PASSED                     [100%]
+
+---------- coverage: platform linux, python 3.10.12-final-0 ----------
+Name                               Stmts   Miss  Cover
+------------------------------------------------------
+app/__init__.py                       25      0   100%
+app/commands/__init__.py              12      0   100%
+app/plugins/__init__.py                0      0   100%
+app/plugins/add/__init__.py            7      0   100%
+app/plugins/divide/__init__.py        10      0   100%
+app/plugins/exit/__init__.py           5      0   100%
+app/plugins/menu/__init__.py           5      0   100%
+app/plugins/multiply/__init__.py       7      0   100%
+app/plugins/subtract/__init__.py       7      0   100%
+tests/test_app.py                     16      0   100%
+tests/test_commands.py                43      0   100%
+------------------------------------------------------
+TOTAL                                137      0   100%
+
+
+========================= 8 passed, 4 skipped in 0.32s =========================
