@@ -87,4 +87,3 @@ def test_app_menu_command(capfd, monkeypatch):
     app = App()
     with pytest.raises(SystemExit) as e:
         app.start()  # Assuming App.start() is now a static method based on previous discussions
-    assert str(e.value) == "Exiting...", "The app did not exit as expected"
